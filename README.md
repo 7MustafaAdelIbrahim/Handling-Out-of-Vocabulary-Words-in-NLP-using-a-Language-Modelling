@@ -27,5 +27,9 @@ OOV Embedding Prediction Step
 Predict Word Embedding Step
 The OOV Word Embedding Prediction step is shorter than the Model preparation step. Step 1, consists of loading all the models and parameters required to run the Embedding Prediction functions. In Step 2, the Generate Sequence function is used as a function that is called by Step 4’s Set Embedding function to be able to predict the most probable words that occur in place of the OOV word in the Sample text. These predictions are used to map to GloVe vectors of the predicted words and the Step 4 function defines a weighted average of the predicted words’ embeddings. This Embedding is assigned to the vocabulary of our pre-trained model. This method of assigning embeddings is used so that, the OOV words will have a reasonable position in the vector space based on its context, even though it was initially not assigned an embedding.
 
+### ***About Our Dataset***.
+The ROCStories dataset can be downloaded from the associated website.
+https://paperswithcode.com/dataset/rocstories
+
 ResearchGate:
 https://www.researchgate.net/publication/335757797_Language_Modelling_for_Handling_Out-of-Vocabulary_Words_in_Natural_Language_Processing?showFulltext=1&linkId=5d7a26a04585151ee4afb0c5 
